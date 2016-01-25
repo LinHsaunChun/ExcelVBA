@@ -1,0 +1,10 @@
+Public Sub GetData()
+    Dim wk As Workbook, DataSht As Worksheet,
+    Set wk = GetObject("C:\Users\simmmmmoe\Downloads\AAA\B.xlsx")
+	'設定要抓取工作本的路徑
+    Set DataSht = wk.Sheets("工作表1")
+	'設定該工作本要讀取哪個工作表
+    Cells(2, 1).Value = DataSht.Cells(2, 1).Value
+	'呼叫的工作表(2,1)的值要等於B.xlsx的工作表1(2,1)的值
+    
+End Sub
